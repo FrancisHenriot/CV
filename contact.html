@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Francis Henriot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="haut">
+        <article class="nom_boulot">
+            <!--Nom de la personne-->
+            <h1 class="nom">FRANCIS HENRIOT</h1>
+
+            <!--Titre de la fonction-->
+            <h2 class="boulot">TECHNICIEN DEVELOPPEUR WEB</h2>
+        </article>
+        <article class="photo_contact">
+
+            <img class="photo_profil" src="images/photo_profil.jpg" alt="Photo de Francis">
+
+            <div class="contact">
+                <a href="index.html">RETOUR CV</a>
+            </div>
+        </article>
+    </header>
+
+    <main class="page_contact">
+        <section class="detail_contact">
+            <h2 class="titre_contact">Pour me contacter</h2>
+            <article class="adresse">
+                <h3>ADRESSE</h3>
+                <P>5 allée du parc georges pompidou <br>
+                    38100 GRENOBLE</P>
+            </article>
+
+            <article class="telephone">
+                <h3>TELEPHONE</h3>
+                <P>06 71 21 59 26</P>
+            </article>
+
+            <article class="mail">
+                <h3>Email</h3>
+                <p>Me contacter par mail :
+                    <a href="mailto:francis.henriot@le-campus-numerique.fr">francis.henriot@le-campus-numerique.fr</a>
+                </p>
+            </article>
+        </section>
+
+        <form action="https://httpbin.org/post" method="post">
+            <div class="radio">
+                <p>Vous êtes :</p>
+                <div>
+                    <label for="contactChoice1">Développeur</label>
+                    <input type="radio" id="contactChoice1" name="type_personne" value="Développeur">
+
+                    <label for="contactChoice2">Employeur</label>
+                    <input type="radio" id="contactChoice2" name="type_personne" value="Employeur">
+
+                    <label for="contactChoice3">Curieux</label>
+                    <input type="radio" id="contactChoice3" name="type_personne" value="Curieux">
+
+                </div>
+            </div>
+
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <div>
+                <label for="mail">E-mail :</label>
+                <input type="email" id="mail" name="user_mail" required>
+            </div>
+            <div>
+                <label for="mail">Type de demande :</label>
+                <select>
+                    <option value>Savoir faire</option>
+                    <option value>Age</option>
+                    <option value>Précisions</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="user_message" required>Saisir votre demande</textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer le message</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
